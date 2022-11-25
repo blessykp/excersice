@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Register Form</title>
+</head>
+
+<body>
+    <div name="container" class="container">
+        <!-- ---------------header------------ -->
+        <div class="header">
+            <ul>
+                <li>Home</a></li>
+                <li>Support Forum</li>
+
+
+            </ul>
+        </div>
+        <!-- ------------------------header end------------------ -->
+
+
+
+
+        <div class="reg-container">
+            <div class="reg-left-div">
+                <h1 >INFOMATION</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur
+                    maxime atque, laboriosam<br>
+                    ipsum cum neque fugit illo cupiditate repellendus, <br> eum sunt! Impedit,
+                    doloremque inventore corrupti nihil perspiciatis debitis?
+                </p>
+
+                <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tenetur
+                    maxime atque, laboriosam,<br>
+                    ipsum cum neque fugit illo cupiditate repellendus,
+                    <br> similique eum sunt! Impedit,
+                    doloremque inventore corrupti nihil perspiciatis debitis?
+                </p>
+
+                <p class="element-spacing"><button class="button-4">Have an Account</button></p>
+            </div>
+
+            <div class="reg-right-div">
+                <form novalidate name="registration" action="/" method="post">
+                    <h1 id="reg-head">REGISTER FORM</h1>
+
+                    <!-- ------row--1------------ -->
+                    <div class="row">
+
+                        <div class="column"> 
+                            <label for="fname" >First Name:</label>
+                            <input type="text" id="fname" name="fname" class="element-spacing"  >
+
+                        </div>
+                        <div class="column"> <label for="lname" >Last Name:</label>
+                            <input type="text" id="lname" name="lname" required class="element-spacing" >
+                        </div>
+
+                    </div>
+                    <!-- row-1 END -->
+                    <!-- <---row1-validation------ -->
+                    <!-- <div class="row">
+
+                        <div class="column"><span id="errfname" class="formerror"></span></div>
+                        <div class="column"><span id="errfname" class="formerror"></span></div>
+                    </div> -->
+                    <!-- <---row1-validation END------ -->
+
+                    <!-- -----------row-2--------- -->
+                    <div class="row">
+
+                        <div class="column">
+                            <label for="email">Your Email</label><br>
+                            <input type="email" id="email" class="element-spacing" required>
+                        </div>
+
+
+                    </div>
+                    <!-- -----------row-2- END-------- -->
+
+                    <!-- <---row-2-validation------ -->
+                    <!-- <div class="row">
+
+                        <div class="column"><span id="erremail" class="formerror"></span></div>
+
+                    </div> -->
+                    <!-- <---row-2-validation------ -->
+
+                    <!-- -----row-3----- -->
+                    <div class="row">
+
+                        <div class="column"><label for="password">Password</label>
+                            <input type="password" id="password" class="element-spacing" required>
+                        </div>
+
+                        <div class="column"> <label for="confirmpassword">Confirm
+                                password</label>
+                            <input type="password" name="confirmpassword" id="confirmpassword" class="element-spacing"  required>
+                        </div>
+
+                    </div>
+                    <!-- -----row-3----- -->
+                    <!-- -----row-3-validation----- -->
+          
+            <!-- <div class="row">
+
+                <div class="column"><span id="errpassword" class="formerror"></span></div>
+                <div class="column"><span id="errconfirmpassword" class="formerror"></span></div>
+            </div> -->
+            <!-- ----row-3-validation-END -->
+            <!-- <div class="row" > -->
+
+              
+                <input type="checkbox" name="agreed" id="agreed" class="checkdisplay">
+                <label for="agreed"> I agree to the<a href="" class="checkdisplay"><b>Terms and conditions</b></a>
+                </label>
+               
+            <!-- </div> -->
+            <br>
+            <br>
+             <div class="row">   
+            <input style="margin-left:8px ;" type="button" id="reg-btn-submit" value="Register"  onclick="validateForm()"  class="button-65 element-spacing" >
+        </div>
+
+            
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>
