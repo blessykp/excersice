@@ -28,7 +28,7 @@ function validateForm() {
 
   if (!emailIsValid(email)) {
     alert("Please enter a valid email address.");
-    emailAddress.focus();
+    
     return false;
   }
   
@@ -55,6 +55,6 @@ function validateForm() {
 
   console.log("first name is ",first_name);
   console.log("last name is",last_name);
-  console.log("email is",email);
+  console.log("email address is",email);
   return true;
 }  
